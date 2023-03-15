@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Tabelas HTML</title>
+</head>
+<body>
+     <TABLE BORDER=2>
+        <THEAD>
+            <TR><TH> Personagem</TH></TH> Idade </TH><TR>
+        </THEAD>
+        <BODY>
+            <TR><TD> Mickey </TD></TD> 35 </TD></TR>
+            <TR><TD> Pateta </TD></TR> 25 </TD></TR>
+        </TBODY>
+     </TABLE>
+     
+</body>
+</html>
