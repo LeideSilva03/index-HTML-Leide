@@ -14,8 +14,14 @@
         <BODY>
             <TR><TD> Mickey </TD></TD> 35 </TD></TR>
             <TR><TD> Pateta </TD></TR> 25 </TD></TR>
-        </TBODY>
+            <TR><TD>Borboletas</TD>
+                 <p><img src="../imagens/borboletas.jpg" alt="borboletas" width="500" heigth="700"></p>
+                 <h2>Exemplos de Sala de Aula</h2>
+                 <p><a href="Exemplos/tabelas.html">exemplo 1 tabelas</a></p>
+
+        
+      </TBODY>
      </TABLE>
-     
+     <p>alteração</p>
 </body>
 </html>
