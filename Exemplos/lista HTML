@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta>
+        <title>Aula Lista de Definições</title>
+    </head>
+    <body>
+        <h1>Lista não Ordenada</h1>
+        <ul>
+            <li>Bola</li>
+            <li>Carrinho</li>
+            <li>Boneca</li>
+            <li>Iô-Iô</li>
+            <li>Bolinha de Gude</li>
+            <li>Peteca</li>
+        </ul>
+        
+        <h1>Lista Ordenada</h1>
+        <ol>
+            <li>Arroz</li>
+            <li>Feijão</li>
+            <li>Farinha</li>
+            <li>Carne</li>
+            <li>Verduras</li>
+                <ol style="list-style-type: lower-alpha">
+                    <li>Alface</li>
+                    <li>Tomate</li>
+                    <li>Batatinha</li>
+                </ol>
+            </li>
+            <li>Leite</li>
+        </ol>
+        
+        
+
+
+        <h1>Lista de Definições</h1>
+
+        <h2>Medicamentos</h2>
+        <dl>
+            <dt>Dipirona</dt>
+                <dd>Analgésico e anti-térmico</dd>
+            <dt>Hidróxido de Alumínio</dt>
+                <dd>Anti ácido</dd>
+        </dl>
+    </body>
+</html>                    
+                    
