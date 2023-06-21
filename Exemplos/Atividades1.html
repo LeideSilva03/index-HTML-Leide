@@ -1,60 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercíos de Formulários</title>
-</head>
-<body>
-    <h2 style="text-align: center;">Exemplo de Formulário de Inscrição</h2>
-
-    <form>
-    <table style="width:60;" margin="auto">
-        <tr>
-            <td style="text-align:right;">Name Completo</td>     
-            <td>
-                <input type="seu nome"
-                        placeholder="seu nome">
-            </td>
-        </tr>
-           <td style="text-align:right;">E-mail</td>
-           <td>
-                <input type="seu e-mail"
-                        placeholder="seu e-mail">
-            </td>
-        </tr>
-            <td style="text-align:right;">Sexo</td>
-        <td>
-            <input type="radio" name="sexo" value="Masculino">Masculino
-            &nbsp;&nbsp;
-            <input type="radio" name="sexo" value="Feminino">Feminino
-            </td> 
-        </tr>
-            <td style="text-align:right;">Cargo:</td>
-            <td>
-                <input type="cargo">
-            </td>
-        </tr>
-            <td style="text-align:right;">Nascimento:"</td>
-        <td>
-            <input type="Nascimento">
-            </td>
-        </tr>
-            <td style="text-align:right;">Telefone:</td>
-        <td>
-            <input type="Telefone">
-            </td>
-        </tr>
-            <td style="text-align:right;"></td>    
-            </td>    
-        </tr>  
-    </table> 
-    <br>
-    <h3> </h3>   
-    </form>
-    
-</body>
-</html>
-
-
+	<head>
+		<meta charset="utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Questionário</title>
+	</head>
+	<body>
+        <h2 style="text-align: center">Questionário</h2>
+            <table style="width:70; margin: o auto">
+        <p>
+            Crie um questionário com 3 questão para o usuário responder.Todas as questões são obrigatórias.
+            Ao clicar no botão submit, verifique se todas as resposta estão corretas.Caso sim, submeta a página.
+            Caso contrário,apresente uma borda vermelha nos campos que possuírem respostas incorretas.
+        </p>
+        <form id="form">
+            <fieldset>
+                <input type="text" name="faculdade" placeholder="Qual Faculdade você estuda?" size="50"><br><br>
+			    <input type="text" name="disciplina"  placeholder="Qual discilplina você mais gosta?">
+			    <input type="text" name="curso" placeholder="Quantos anos tem seu curso?"/>
+            </fieldset>
+                <button type="submit" id="btenviar">Enviar</button>
+        </form>
+        <script>
+            form.onsubmit = function(e){
+                //e.preventDefault();
+                faculdade = document.getElementsByName('faculdade')[0];
+                disciplina = document.getElementsByName('disciplina')[0];
+                curso = document.getElementsByName('curso')[0];
+                let ok=true;
+                
+                if (faculdade.value==""){
+                    faculdade.style.borderColor="red";
+                    ok=false;
+                
+                }
+                if (disciplina.value==""){
+                    disciplina.style.borderColor="red";
+                    ok=false;
+                }
+                if(curso.value==""){
+                    curso.style.borderColor = "red";
+                    ok=false;
+                }
+            
+                return ok;
+            }
+        </script>
+    </head>
+	<body>    
